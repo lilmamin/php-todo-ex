@@ -36,9 +36,9 @@ if (isset($_POST['action'])) {
       die();
 
     /**
-     * Toggle a task (i.e. if it is done, undo it; if it is not done, mark it as done),
-     * then redirect to the base URL.
-     */
+       * Toggle a task (i.e. if it is done, undo it; if it is not done, mark it as done),
+       * then redirect to the base URL.
+       */
     case 'toggle':
 
       $id = $_POST['id'];
@@ -53,8 +53,8 @@ if (isset($_POST['action'])) {
       die();
 
     /**
-     * Delete a task, then redirect to the base URL.
-     */
+       * Delete a task, then redirect to the base URL.
+       */
     case 'delete':
 
       $id = $_POST['id'];
@@ -76,7 +76,7 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = ''; // IMPLEMENT ME
+$selectQuery = 'SELECT * FROM todo'; // IMPLEMENT ME
 $items = $db->query($selectQuery);
 ?>
 
