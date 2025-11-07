@@ -8,7 +8,7 @@ define('BASE_URL', '/php-todo-ex/');
 
 // Database connection parameters.
 define('DB_USER', 'todolist');
-define('DB_PASS', 'LilouAissya');
+define('DB_PASS', 'Mamilou123!');
 define('DB_NAME', 'todolist');
 define('DB_HOST', '127.0.0.1');
 define('DB_PORT', '3306');
@@ -36,9 +36,9 @@ if (isset($_POST['action'])) {
       die();
 
     /**
-       * Toggle a task (i.e. if it is done, undo it; if it is not done, mark it as done),
-       * then redirect to the base URL.
-       */
+     * Toggle a task (i.e. if it is done, undo it; if it is not done, mark it as done),
+     * then redirect to the base URL.
+     */
     case 'toggle':
 
       $id = $_POST['id'];
@@ -53,8 +53,8 @@ if (isset($_POST['action'])) {
       die();
 
     /**
-       * Delete a task, then redirect to the base URL.
-       */
+     * Delete a task, then redirect to the base URL.
+     */
     case 'delete':
 
       $id = $_POST['id'];
@@ -76,7 +76,8 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = 'SELECT * FROM todo'; // IMPLEMENT ME
+
+$selectQuery = 'SELECT * FROM todo';
 $items = $db->query($selectQuery);
 ?>
 
